@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS reset v2.0</title>
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/reset.mini.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+
+    <body id="top">
+        <header>
+            <section class="container-aside">
+                <nav>
+                    <h1><strong>CSS reset V2.0</strong></h1>
+                    <p>By<a href="https://matteomania.tk" target="_blank">Matteo Manià</a>with <path>❤</path>
+                    </p>
+                    <h2>Elements:</h2>
+                    <ul>
+                        <div></div><a href="#top" id="top">Home</a><div></div>
+                        <li><a href="#title">Titles</a></li>
+                        <li><a href="#button">Buttons</a></li>
+                        <li><a href="#links">Links</a></li>
+                        <li><a href="#cards">Cards</a></li>
+                        <li><a href="#lists">Lists</a></li>
+                        <li><a href="#image">Image</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#progress">Progress</a></li>
+                        <li><a href="#input">Input</a></li>
+                        <li><a href="#menu">Select menu</a></li>
+                        <div id="aside">
+                            <p>github</p>
+                            <a href="https://github.com/Matteo0099">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <section id="title">
+                <h1>This is a heading</h1>
+                <h2>This is a heading</h2>
+                <h3>This is a heading</h3>
+                <h4>This is a heading</h4>
+                <h5>This is a heading</h5>
+                <h6>This is a heading</h6>
+            </section>
+
+            <section id="button">
+                <div>
+                    <button class="btn">normal button</button>
+                </div>
+
+                <div>
+                    <button class="btn active">button is active</button>
+                </div>
+            </section>
+
+            <section id="links">
+                <div>
+                    <!--or default-->
+                    <a href="#" class="undeline">This is a link</a>
+                </div>
+
+                <div>
+                    <a href="#" class="no-underline">This is link without underline</a>
+                </div>
+            </section>
+
+            <section id="cards">
+                <div class="card">
+                    <h1>This is Title</h1>
+                    <h4>Card example</h4> 
+                    <div class="card-footer">
+                        <p>This is card-footer</p>
+                    </div>
+                    <h5>Pro-tips: <br> With class ".center" you can align center every thing!</h5>
+                </div>
+            </section>
+
+            <section id="lists">
+                <h1>Ordered list</h1>
+                <div class="list">
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                    <li>
+                        ordered list with <strong>.list</strong>
+                    </li>
+                </div>
+            </section>
+
+            <section id="image">
+                <h1>Images</h1>
+                <p>This is an example: </p>
+                <img src="https://picsum.photos/800/400/?image=973">
+            </section>
+
+            <section id="video">
+                <h2>Video </h2>
+                <video controls="">
+                    video
+                </video>
+            </section>
+
+            <section id="progress">
+                <h2>Progress bars types</h2>
+                <br>
+                <p>Meter</p>
+                <meter value="7" min="0" max="20" 2 out of 10>Meter bar</meter>
+                <div><br></div>
+                <p>Progress bar</p>
+                <progress>Progress bar</progress>
+            </section>
+
+            <section id="input">
+                <h2>Input types</h2><br>
+                <fieldset id="forms__html5">
+                    <p>
+                      <label for="ic">Color input</label>
+                      <input type="color" id="ic" value="#000000">
+                    </p>
+                    <p>
+                      <label for="if">File input</label>
+                      <input type="file" id="if">
+                    </p>
+                    <p>
+                      <label for="in">Number input</label>
+                      <input type="number" id="in" min="0" max="10" value="5">
+                    </p>
+                    <p>
+                      <label for="ir">Range input</label> &ensp;
+                      <input type="range" id="ir" value="10">
+                      <br>
+                    </p>
+                    <p>
+                      <label for="idd">Date input</label>
+                      <input type="date" id="idd" value="1970-01-01">
+                    </p>
+                    <p>
+                      <label for="idm">Month input</label>
+                      <input type="month" id="idm" value="1970-01">
+                    </p>
+                    <p>
+                      <label for="idw">Week input</label>
+                      <input type="week" id="idw" value="1970-W01">
+                    </p>
+                    <p>
+                      <label for="idt">Datetime input</label>
+                      <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+                    </p>
+                    <p>
+                      <label for="idtl">Datetime-local input</label>
+                      <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+                    </p>
+                  </fieldset>
+            </section>
+
+            <section id="menu">
+                <h2>Select menu</h2>
+                <p>
+                    <label for="select">Select</label>
+                    <select id="select">
+                      <optgroup label="Option Group">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                        <option>Option 6</option>
+                        <option>Option 7</option>
+                        <option>Option 8</option>
+                        <option>Option 9</option>
+                        <option>Option 10</option>
+                      </optgroup>
+                    </select>
+                </p>
+            </section>
+
+            <a href="#top" class="btn">Turn to top ↑</a>
+        </main>       
+
+        <script src="src/app.js"></script>
+    </body>
+</html>
