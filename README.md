@@ -6,7 +6,7 @@ Css reset with <3 by Me, since 2022
 
 <h1>What is Css reset v2.0?</h1>
 A simply fantastic reset & normalize css-file <br>
-```
+``` text
 CssReset is a complete reset and normalize for css 
 CSS reset v2.0 is a styling css text-file, which will allow you to use your html and css to the fullest. 
 It has everything you need, including custom styles, classes, and is up-to-date for today's browsers.
