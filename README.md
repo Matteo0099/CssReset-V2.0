@@ -3,7 +3,7 @@ Css reset by Me, since 2022
 MIT License
 Copyright (c) 2022 Matty
 <h1>SET-UP</h1>
-><h1>Install</h1>:
+><h1>Install</h1>
 <h3>Just to download the cssreset.css (style>cssreset.css) and <strong>just add it into your file!</strong></h3>
 <h3>Or you can add a *CDN* with the link to style</h3>
 <h1>What is Css reset v2.0?</h1>
