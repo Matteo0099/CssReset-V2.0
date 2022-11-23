@@ -6,7 +6,7 @@
 
 ```text 
 Css reset with <3 by Me, since 2022 
-`
+```
 
 <h1>What is Css reset v2.0?</h1>
 A simply fantastic reset & normalize css-file <br>
@@ -17,6 +17,12 @@ It has everything you need, including custom styles, classes, and is up-to-date 
 ```
 
 ## INSTALLATION
+
+## Example configuration.yaml
+
+```yaml
+readme:
+```
 
 1. download the cssreset.css (style>cssreset.css) and <strong>just add it into your file!</strong>
 2. Or you can add a *CDN* into your project!:  [CDN link](https://www.cssreset.tk/assets/reset.css) <br>
