@@ -2,7 +2,6 @@
 /** this is index style **/
 
 html, body {
-    /* height: 100vh !important; */
     max-height: 100vh !important;
 }
 
@@ -24,8 +23,65 @@ nav a svg {
     margin: auto .2rem;
 }
 
+nav a:hover svg {
+    transform: translateY(-4px);
+    transition: all 250ms cubic-bezier(.215, .61, .355, 1);;
+}
+
 a:hover {
     text-decoration: none;
+}
+
+.fancy__link {
+    animation: fancylink 6s infinite 175ms;
+}
+
+@keyframes fancylink {
+    0% {
+        text-decoration: none;
+    }
+    33% {
+        content: '';
+        height: 4px;
+        border-radius: 4px;
+        background-color: #18272fbe;
+        transition: transform .3s ease-in-out;
+        color: #f7f7f7;
+    }
+    99% {
+        content: '';
+        height: inherit;
+        border-radius: 8px;
+        background-color: #18272fcc;
+        transition: transform .45s ease-in-out;
+        color: #f7f7f7;
+    }
+}
+
+@-moz-keyframes fancylink {
+    0% {
+        text-decoration: none;
+    }
+    33% {
+        content: '';
+        height: 4px;
+        border-radius: 4px;
+        background-color: #18272fbe;
+        transition: transform .3s ease-in-out;
+        color: #f7f7f7;
+    }
+    99% {
+        content: '';
+        height: inherit;
+        border-radius: 8px;
+        background-color: #18272fcc;
+        transition: transform .45s ease-in-out;
+        color: #f7f7f7;
+    }
+}
+
+.title {
+    text-align: center;
 }
 
 button {
@@ -134,7 +190,7 @@ button {
 /* mobile resize for all components */
 @media screen and (max-width: 767px) {
     .wrapper {
-        height: calc((100vh - 250px));
+        height: calc((100vh - 200px));
     }
 
     a {
@@ -153,3 +209,30 @@ button {
         padding: 0 !important;
     }
 }
+
+@media screen and (max-height: 1024px) and (max-width: 767px) {
+    .wrapper__instead {
+        transform: none;
+    }
+    .hero__section {
+        padding: 1em;
+    }   
+    a {
+        font-size: 15px;
+    }
+    .button__reset, .button__normalize {
+        height: 50px;
+        width: fit-content;
+        padding: 1rem;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: all 0ms;
+    }
+}
+
+@media screen and (max-height: 668px) {
+    .wrapper {
+        height: calc((100vh - 73.7px));
+    }
+}
+

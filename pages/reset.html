@@ -9,9 +9,7 @@
     <!--styiling this page-->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/styleReset.css">
-    <!--css reset complete and minify-->
-    <!-- <link rel="stylesheet" href="../css-reset-v2/resetV2.css"> -->
-    <!-- <link rel="stylesheet" href="../css-reset-v2/resetV2.mini.css"> -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 </head>
 
 <body id="top">
@@ -69,144 +67,143 @@
     <main>
         <section class="reset">
             <h1 class="title">My Custom <em>CSS Reset</em></h1>
-                <div class="text__content">
-                    <p class="paragraph">
-                        My custom <em>css</em> was born when I started 
-                        needing to use a css reset done my way.
-                        Before creating my custom reset css, I used 
-                        the usual reset css found on the internet, 
-                        which all had nice features, but they didn't
-                        have all the perfect things in a single 
-                        file as I wanted them. Enjoy my 100 most 
-                        researched lines of code I've ever created :).
-                        <br> <em>With ❤ by Matteo</em>
-                        <!-- <a href="https://matteomania.tk" target="_blank">
-                            Manià</a> -->
-                    </p>
-                </div>
+            <div class="text__content">
+                <p class="paragraph">
+                    My custom <em>css</em> was born when I started 
+                    needing to use a css reset done my way.
+                    Before creating my custom reset css, I used 
+                    the usual reset css found on the internet, 
+                    which all had nice features, but they didn't
+                    have all the perfect things in a single 
+                    file as I wanted them. Enjoy my 100 most 
+                    researched lines of code I've ever created :).
+                    <br> <em>With ❤ by Matteo</em>
+                </p>
+            </div>
             <!--custom css reset-->
             <pre>
-                <div class="code__box">
-                    <div class="content">
-                        <!--codes-->
-                        <div class="code__externBox">
-                            <textarea class="textarea" 
-                                autocapitalize="none" autocomplete="off" 
-                                disabled spellcheck="false"
-                                id="textarea__code">
-                                *, *::before, *::after {
-                                    box-sizing: border-box;
-                                    font: inherit
-                                }
-                                
-                                html, body, div, span, applet, object, iframe,
-                                h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-                                a, abbr, acronym, address, big, cite, code,
-                                del, dfn, em, img, ins, kbd, q, s, samp,
-                                small, strike, strong, sub, sup, tt, var,
-                                b, u, i, center, dl, dt, dd, ol, ul, li,
-                                fieldset, form, label, legend, table,
-                                caption, tbody, tfoot, thead, tr, th, td,
-                                article, aside, canvas, details, embed,
-                                figure, figcaption, footer, header, hgroup,
-                                menu, nav, output, ruby, section, summary,
-                                time, mark, audio, video {
-                                    margin: 0;
-                                    padding: 0;
-                                    border: 0;
-                                    font-size: 100%;
-                                    font: inherit
-                                }
-                                
-                                html, body {
-                                    min-height: 100vh;
-                                    line-height: 1
-                                }
-                                
-                                img, picture, video, canvas, svg {
-                                    display: block;
-                                    max-width: 100%;
-                                    height: auto
-                                }
-                                
-                                p, h1, h2, h3, h4, h5, h6 {
-                                    overflow-wrap: break-word;
-                                    margin: 0;
-                                    font-size: inherit;
-                                    font-weight: inherit
-                                }
-                                
-                                input, button, textarea, select {
-                                    font: inherit
-                                }
-                                
-                                table {
-                                    border-collapse: collapse;
-                                    border-spacing: 0
-                                }
-                                
-                                ol, ul, ul[role='list'], ol[role='list'] {
-                                    list-style: none
-                                }
-                                
-                                a {
-                                    text-decoration: none;
-                                    color: inherit;
-                                    cursor: pointer
-                                }
-                                
-                                button {
-                                    background-color: transparent;
-                                    color: inherit;
-                                    border-width: 0;
-                                    padding: 0;
-                                    cursor: pointer;
-                                    appearance: button;
-                                    -webkit-appearance: button;
-                                }
-                                
-                                q, blockquote {
-                                    quotes: none
-                                }
-                                
-                                q:before, q:after, blockquote:before, blockquote:after {
-                                    content: "";
-                                    content: none
-                                }
-                                
-                                cite, fieldset {
-                                    border-width: 0;
-                                    padding: 0
-                                }
-                                
-                                article, aside, details, figcaption, figure, footer,
-                                header, hgroup, main, menu, nav, section, summary {
-                                    display: block
-                                }
-                                
-                                @media (prefers-reduced-motion: reduce) {
-                                    *, *::before, *::after {
-                                        animation-duration: 0.01ms !important;
-                                        animation-iteration-count: 1 !important;
-                                        transition-duration: 0.01ms !important;
-                                        scroll-behavior: auto !important;
-                                    }
-                                
-                                    html:focus-within {
-                                        scroll-behavior: auto !important;
-                                    }
-                                }
-                            </textarea>
-                        </div>
-                        <!--<pre aria-hidden="true">
-                            <div class="token comment"></div>
-                            <div class="token-line"></div>
-                        </pre>-->
+            <div class="code__box">
+                <div class="not_hide">
+                    <a href="../reset.txt" download="CssReset.txt" class="btn css__download">
+                        Download the Cssreset!
+                    </a>
+                    <h1 class="muted">View this from your PC / tablet!</h1>
+                </div>
+                <div class="content">
+                    <div class="code-wrapper">
+                        <pre>
+                            <span id="copy-success">Code copied!</span>
+                            <button id="copy-button">Copy</button>
+                            <code id="code">
+*, *::before, *::after {
+    box-sizing: border-box;
+    font: inherit
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, address, cite, code, del, dfn, 
+em, img, ins, kbd, q, samp, strong, sup, 
+var, b, i, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, 
+canvas, details, figure, figcaption, footer, 
+header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit
+}
+
+html, body {
+    min-height: 100vh;
+    line-height: 1
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+input, button, textarea, select {
+    font: inherit
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ol, ul, ul[role='list'], ol[role='list'] {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer
+}
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+q, blockquote {
+    quotes: none
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none
+}
+
+cite, fieldset {
+    border-width: 0;
+    padding: 0
+}
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, summary {
+    display: block
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    html:focus-within {
+        scroll-behavior: auto !important;
+    }
+}   
+                                </code>
+                            </pre>
+                        </div>  
                     </div>
                 </div>
             </pre>
         </section>
     </main>
+    <script src="../src/Code.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 </body>
-
 </html>

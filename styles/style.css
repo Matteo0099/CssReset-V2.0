@@ -10,10 +10,6 @@ html, body {
 }
 
 /** common file with others **/
-div > * {
-    text-align: center;
-}
-
 * {
     font-family: inherit;
 }
