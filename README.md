@@ -21,7 +21,7 @@ readme:
 ```
 
 1. **download the cssreset.css (style>cssreset.css) and just add it into your file!**
-2. Or you can add a **CDN** into your project!:  [CDN link](https://www.cssreset.tk/assets/reset.css) <br>
+2. Or you can add a **CDN** into your project!:  [CDN link]([https://www.cssreset.tk/](https://cssreset.tk/pages/reset.html)) <br>
 
 
 **WARNING !**
