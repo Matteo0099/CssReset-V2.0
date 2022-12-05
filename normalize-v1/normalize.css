@@ -1,15 +1,18 @@
 /*
-    CSS reset V2.0
+    CSS normalize V1.0
     with <3 by Matteo Manià
     -----------------------------------
     In the root, you can change the default values.
     And then, all the color will change (ex. body, section, titles).
     -----------------------------------
+    > Disclaimer: ***NORMALIZE.css ARE NOT RESET.css. THIS IS A 
+    PERSONALIZED LAYOUT, THE CONCEPT IS AS STUDIED AS FRAMEWORK.***
+    -----------------------------------
     MIT license 2022 all right deserved.
 */
 
-*, 
-*::after, 
+*,
+*::after,
 *::before {
     box-sizing: border-box;
     background-repeat: no-repeat;
@@ -56,8 +59,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-stretch: normal;
-    line-height: 1.4; 
-    -webkit-text-size-adjust: 100%; 
+    line-height: 1.4;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -73,7 +76,7 @@ main {
 embed,
 iframe,
 video {
-  border: 0;
+    border: 0;
 }
 
 img {
@@ -121,11 +124,8 @@ a {
     font-size: var(--fs-4);
     text-decoration: none;
     background-color: transparent;
-    padding: var(--pad-mini);
-}
-
-div {
-    margin: 1rem;
+    /* same */
+    /* padding: var(--pad-mini);  */
 }
 
 ul {
@@ -133,7 +133,10 @@ ul {
 }
 
 li {
-    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: keep-all;
 }
 
 a:hover,
@@ -173,7 +176,7 @@ a:focus {
     /*text-transform: uppercase;*/
 }
 
-.btn.active:hover, .btn.active:focus, .btn.active:is(:active){
+.btn.active:hover, .btn.active:focus, .btn.active:is(:active) {
     cursor: pointer;
     background-color: var(--txt-linkHover);
     transform: scale(1.02);
@@ -189,7 +192,7 @@ a:focus {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 60%;
     padding: 2px 16px;
@@ -210,7 +213,7 @@ a:focus {
 }
 
 /*tables*/
-li, dd, blockquote {
+dd, blockquote {
     margin-left: 40px;
 }
 
@@ -219,12 +222,12 @@ table {
     border-spacing: 0;
 }
 
-address,caption,cite,code,dfn,th,var {
+address, caption, cite, code, dfn, th, var {
     font-style: normal;
     font-weight: normal;
 }
 
-ol,ul {
+ol, ul {
     list-style: none;
 }
 
@@ -265,7 +268,7 @@ textarea {
     font-size: 1rem;
     line-height: 1.5;
     padding: var(--pad-mini) var(--pad-medium);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     width: 100%;
 }
 
@@ -287,7 +290,7 @@ input:not([type]) {
     display: block;
     padding: var(--pad-mini) var(--pad-medium);
     text-align: left;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     width: 100%;
 }
 
@@ -370,10 +373,10 @@ select[multiple] {
 }
 
 /*  
-    upload buttons, 
-    Remove inner padding, 
-    right height
-    style for Chrome, Safari and Edge. 
+*   upload buttons, 
+*   Remove inner padding, 
+*   right height
+*   style for Chrome, Safari and Edge. 
 */
 
 ::-webkit-inner-spin-button,
@@ -387,16 +390,17 @@ select[multiple] {
 }
 
 ::-webkit-search-decoration {
+    appearance: none;
     -webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button; 
-    font: inherit; 
+    appearance: button;
+    -webkit-appearance: button;
+    font: inherit;
 }
 
 /*forms actions*/
-
 label {
     display: inline-block;
     line-height: 2;
@@ -408,7 +412,7 @@ fieldset {
 }
 
 fieldset, legend {
-    padding:var(--pad-mini 0);
+    padding: var(--pad-mini 0);
 }
 
 legend {
@@ -440,7 +444,7 @@ input[type=button], input[type=reset], input[type=submit] {
     font-size: var(--fs-3);
     padding: var(--pad-mini) var(--pad-mini);
     text-align: center;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     vertical-align: middle;
 }
 
@@ -460,6 +464,7 @@ input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus {
     box-shadow: 0 0 0 .4rem rgba(62, 131, 241, 0.2);
     outline: 0
 }
+
 button:disabled,
 input[type=button]:disabled, input[type=reset]:disabled, input[type=submit]:disabled {
     background-color: var(--bg-gray);

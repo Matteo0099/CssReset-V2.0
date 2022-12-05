@@ -1,0 +1,125 @@
+/** css reset styling landing page **/
+.social a {
+    transition: all 300ms cubic-bezier(.215, .61, .355, 1);
+    color: #202020 !important;
+}
+
+section.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.title {
+    font: 900;
+    font-size: 32px;
+    margin-top: 4rem;
+}
+
+.text__content {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* box shadow and decor */
+    box-shadow: 4px 2px 14px -2px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 4px 2px 14px -2px rgba(0,0,0,0.34);
+    -moz-box-shadow: 4px 2px 14px -2px rgba(0,0,0,0.34);
+    border-radius: 12px;
+    border: 2px solid #999;
+}
+
+.code__box {
+    position: relative;
+    display: flex;
+    /* font-family: ; */
+    font-size: 18px;
+    outline-offset: 2px;
+    overflow: auto;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 12px;
+    min-height: 60vh;
+    border-radius: 6px;
+    max-width: calc(100% + 64px);
+}
+
+.code__box .content {
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0px;
+    overflow: hidden;
+    white-space: pre;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: ; */
+    color: #fff;
+    background-color: transparent;
+    font-size: 1rem !important;
+    line-height: 29px !important;
+}
+
+.textarea__code {
+    text-align: left;
+    margin: 0px;
+    border: 0px none;
+    background: none;
+    box-sizing: inherit;
+    display: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    tab-size: inherit;
+    text-indent: inherit;
+    text-rendering: inherit;
+    text-transform: inherit;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    color: inherit;
+    overflow: hidden;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+}
+
+pre {
+    white-space: unset !important;
+    word-break: unset !important;
+    overflow-wrap: unset !important;
+}
+
+.code__externBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.textarea {
+    text-align: left;
+    /* 2022 be like: */
+    min-height: 2022px; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 550px;
+    max-width: 500px;
+    resize: none;
+    padding: 36px 12px;
+}

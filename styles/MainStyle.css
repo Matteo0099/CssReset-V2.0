@@ -1,0 +1,155 @@
+/** nav in style.css global for the (3) files **/
+/** this is index style **/
+
+html, body {
+    /* height: 100vh !important; */
+    max-height: 100vh !important;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 700;
+    text-decoration: underline;
+    display: flex;
+    align-self: baseline;
+    vertical-align: middle;
+}
+
+nav a svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: auto .2rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 6px;
+}
+
+.social a {
+    transition: all 300ms cubic-bezier(.215, .61, .355, 1);
+    color: #202020 !important;
+}
+
+.social a:hover {
+    opacity: .7;
+}
+
+.button__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem auto !important;
+    gap: 24px;
+}
+
+.button__reset, .button__normalize {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+
+    cursor: pointer;
+    border: 2px solid #202020;
+    /* outline: 2px solid #202020; */
+    background-color: #202020;
+    color: #fff;
+    -moz-outline-radius: inherit;
+    height: 50px;
+    width: 175px;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 300ms cubic-bezier(.215, .61, .355, 1);
+}
+
+/* a href="" */
+.button__item {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font: 900;
+}
+
+/* hover buttons */
+.button__reset:hover, .button__normalize:hover {
+    color: #202020;
+    background-color: whitesmoke;
+}
+
+.button__reset:hover a, .button__normalize:hover a {
+    color: #202020;
+}
+
+.bottom__footer {
+    bottom: 0;
+    min-height: 5rem;
+    background-color: hsl(0, 0%, 99%);
+    color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 1024px;
+    border-radius: 22px;
+    border: none;
+}
+
+.copy__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.copy__container .p {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: .4px;
+}
+
+/* mobile resize for all components */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        height: calc((100vh - 250px));
+    }
+
+    a {
+        border-bottom: none;
+        text-decoration: underline;
+        -ms-text-combine-horizontal: none;
+    }
+
+    li, a {
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+
+    .nav__list {
+        margin: auto .5rem;
+        padding: 0 !important;
+    }
+}
