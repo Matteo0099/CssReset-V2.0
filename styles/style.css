@@ -44,7 +44,8 @@ html, body {
 
 a {
     text-decoration: none;
-    color: dodgerblue;
+    color: #202020;
+    /* color: dodgerblue; */
     font-weight: 700;
     text-decoration: underline;
     display: flex;

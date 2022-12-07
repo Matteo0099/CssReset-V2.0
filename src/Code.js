@@ -20,6 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         );
     };
-
     copyButton.addEventListener('click', copyTextHandler);
 });
