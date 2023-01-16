@@ -4,27 +4,31 @@
 html, body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
+    line-height: 1.4;
     line-break: 1.4;
     -webkit-line-break: 1.4;
     max-height: 100vh;
 }
 
 /** common file with others **/
-* {
+*, *::before, *::after {
     font-family: inherit;
+    box-sizing: border-box;
+    padding: 0; 
 }
 
 .nav {
-    margin: 0;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: #202020;
-    backdrop-filter: (22px);
+    backdrop-filter: blur(22px);
     background-color: hsl(0, 0%, 99%);
-    box-shadow: 24px 8px 0 #999;
+    box-shadow: 0px 0px 35px -5px rgba(138,138,138,0.44);
+        -webkit-box-shadow: 0px 0px 35px -5px rgba(138,138,138,0.44);
+            -moz-box-shadow: 0px 0px 35px -5px rgba(138,138,138,0.44);
     border-top: 2px solid #999;
     border-left: 2px solid #999;
     border-bottom-left-radius: 22px;
@@ -34,8 +38,8 @@ html, body {
     text-align: center;
     margin: 0 auto !important;
     max-width: 767px;
-    min-height: 3.5rem;
-    max-height: 4.5rem;
+    min-height: 3.75rem;
+    max-height: 3.75rem;
 }
 
 .nav a {
@@ -45,7 +49,6 @@ html, body {
 a {
     text-decoration: none;
     color: #202020;
-    /* color: dodgerblue; */
     font-weight: 700;
     text-decoration: underline;
     display: flex;
@@ -88,7 +91,7 @@ button {
     vertical-align: middle;
     align-self: center;
     margin: 0 auto !important;
-    width: 80%;
+    width: 65%;
     max-width: 741px;
 }
 
@@ -128,17 +131,17 @@ main {
 }
 
 .nav__list .item {
-    max-width: 180px;
+    max-width: 180px; /*180px*/
     min-height: 46px;
 }
 
-.nav__list .item:nth-child(1) {
+/* .nav__list .item:nth-child(1) {
     max-width: 90px;
 }
 
 .nav__list .item:nth-child(2) {
     margin-right: .88rem;
-}
+} */
 
 .social {
     display: flex;
@@ -158,7 +161,7 @@ main {
     opacity: .7;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and(device-orentation:vertical) {
     .nav {
         margin: 0;
         word-break: keep-all;
@@ -166,3 +169,4 @@ main {
         box-shadow: 6px 4px 0 #999;
     }
 }
+

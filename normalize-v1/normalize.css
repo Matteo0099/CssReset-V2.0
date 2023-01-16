@@ -15,7 +15,8 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    background-repeat: no-repeat;
+    margin: 0; 
+    padding: 0;
 }
 
 /* defaul colors */
@@ -71,6 +72,10 @@ body {
 main {
     color: var(--txt-primary);
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 embed,
@@ -83,7 +88,7 @@ img {
     image-rendering: optimizeQuality;
     height: auto;
     max-width: 100%;
-    /*vertical-align: baseline;*/
+    background-size: cover;
 }
 
 h1 {
@@ -111,12 +116,16 @@ p {
     color: var(--bg-gray);
 }
 
-h1, h2, h3, h4, h5, h6, p, div, span, article, section {
+h1, h2, h3, h4, h5, h6, span, article, section {
     color: var(--txt-primary);
     font-family: inherit;
-    line-height: 1.2;
+    line-height: 1.4;
     font-weight: 500;
     text-align: center;
+}
+
+p {
+    font-weight: 400;
 }
 
 a {
@@ -124,8 +133,6 @@ a {
     font-size: var(--fs-4);
     text-decoration: none;
     background-color: transparent;
-    /* same */
-    /* padding: var(--pad-mini);  */
 }
 
 ul {
@@ -161,7 +168,7 @@ a:focus {
     cursor: pointer;
 }
 
-.btn.active {
+.active {
     background-color: var(--txt-link);
     border: var(--section-secondary);
     border-radius: var(--border-radius);
@@ -173,22 +180,31 @@ a:focus {
     vertical-align: middle;
     font-size: 1.1rem;
     transition: none;
-    /*text-transform: uppercase;*/
 }
 
-.btn.active:hover, .btn.active:focus, .btn.active:is(:active) {
+.active:hover, .active:focus, .active:is(:active) {
     cursor: pointer;
     background-color: var(--txt-linkHover);
     transform: scale(1.02);
     outline: 1px #fff;
 }
 
+.disabled {
+    user-select: none;
+        -moz-user-select: none;
+            -webkit-user-select: none;
+    background-color: rgba(0,0,0, 0.05);
+    opacity: .875;
+}
+
 .no-underline {
     text-decoration: none !important;
+    text-transform: none !important;
 }
 
 .underline {
     text-decoration: underline !important;
+    text-transform: inherit !important;
 }
 
 .card {
@@ -196,6 +212,12 @@ a:focus {
     transition: 0.3s;
     width: 60%;
     padding: 2px 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .card-footer {
@@ -203,9 +225,9 @@ a:focus {
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .list {
@@ -227,11 +249,12 @@ address, caption, cite, code, dfn, th, var {
     font-weight: normal;
 }
 
-ol, ul {
+ol {
     list-style: none;
 }
 
 :where(audio, canvas, iframe, img, svg, video) {
+    image-rendering: optimizeQuality;
     vertical-align: middle;
 }
 
@@ -270,6 +293,10 @@ textarea {
     padding: var(--pad-mini) var(--pad-medium);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     width: 100%;
+    max-width: 100%;
+    display: flex;
+    appearance: none;
+        -webkit-appearance: none;
 }
 
 input[type=color] {
@@ -391,13 +418,14 @@ select[multiple] {
 
 ::-webkit-search-decoration {
     appearance: none;
-    -webkit-appearance: none;
+        -webkit-appearance: none;
+            -moz-appearance: none;
 }
 
 ::-webkit-file-upload-button {
-    appearance: button;
-    -webkit-appearance: button;
     font: inherit;
+    appearance: button;
+        -webkit-appearance: button;
 }
 
 /*forms actions*/
