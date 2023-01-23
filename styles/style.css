@@ -135,14 +135,6 @@ main {
     min-height: 46px;
 }
 
-/* .nav__list .item:nth-child(1) {
-    max-width: 90px;
-}
-
-.nav__list .item:nth-child(2) {
-    margin-right: .88rem;
-} */
-
 .social {
     display: flex;
     justify-content: flex-end;

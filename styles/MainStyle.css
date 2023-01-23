@@ -8,7 +8,6 @@ html, body {
 a {
     text-decoration: none;
     color: #202020;
-    /* color: dodgerblue; */
     font-weight: 700;
     text-decoration: underline;
     display: flex;
@@ -210,18 +209,15 @@ button {
     .wrapper {
         height: calc((100vh - 200px));
     }
-
     a {
         border-bottom: none;
         text-decoration: underline;
         -ms-text-combine-horizontal: none;
     }
-
     li, a {
         max-width: fit-content;
         max-height: fit-content;
     }
-
     .nav__list {
         margin: auto .5rem;
         padding: 0 !important;
