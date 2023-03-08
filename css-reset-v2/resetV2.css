@@ -31,7 +31,7 @@ time, mark, audio, video {
 
 html, body {
     min-height: 100vh;
-    line-height: 1
+    line-height: 100%
 }
 
 img, picture, video, canvas, svg {
@@ -67,13 +67,14 @@ a {
 }
 
 button {
-    background-color: transparent;
+    background: none;
     color: inherit;
     border-width: 0;
     padding: 0;
     cursor: pointer;
-    appearance: button;
-    -webkit-appearance: button;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 q, blockquote {
@@ -90,17 +91,19 @@ cite, fieldset {
     padding: 0
 }
 
-article, aside, details, figcaption, figure, footer,
-header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, hgroup, section, summary {
     display: block
+}
+
+main, menu, nav, footer, header {
+   display: inherit;   
 }
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
     }
 
     html:focus-within {
