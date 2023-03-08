@@ -17,11 +17,11 @@ It has everything you need, including custom styles, classes, and is up-to-date 
 ## Example configuration.yaml
 
 ```yaml
-readme:
+[via CDN](https://cssreset.tk/css-reset-v2/resetV2.css)
 ```
 
 1. **download the cssreset.css (style>cssreset.css) and just add it into your file!**
-2. Or you can add a **CDN** into your project!:  [CDN link](https://cssreset.tk/css-reset-v2/resetV2.css) <br>
+2. Or you can add a **CDN** into your project!: [CDN link](https://cssreset.tk/css-reset-v2/resetV2.css) <br>
 
 
 **WARNING !**
