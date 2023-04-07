@@ -96,7 +96,7 @@ article, aside, details, figcaption, figure, hgroup, section, summary {
 }
 
 main, menu, nav, footer, header {
-   display: inherit;   
+   display: unset;   
 }
 
 @media (prefers-reduced-motion: reduce) {
