@@ -95,10 +95,6 @@ article, aside, details, figcaption, figure, hgroup, section, summary {
     display: block
 }
 
-main, menu, nav, footer, header {
-   display: unset;   
-}
-
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms;
