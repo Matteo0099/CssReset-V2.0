@@ -1,0 +1,26 @@
+{
+  "name": "cssreset-v2.0",
+  "version": "1.0.0",
+  "description": "a css reset and normalize css from @Matteo0099",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matteo0099/CssReset-V2.0.git"
+  },
+  "keywords": [
+    "vanilla",
+    "reset",
+    "normalize",
+    "resetcss",
+    "normalizecss"
+  ],
+  "author": "Matteo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Matteo0099/CssReset-V2.0/issues"
+  },
+  "homepage": "https://github.com/Matteo0099/CssReset-V2.0#readme"
+}
