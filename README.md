@@ -15,11 +15,11 @@ It has everything you need, including custom styles, classes, and is up-to-date 
 ## INSTALLATION
 
 ## Example configuration.yaml
-> Add into your `head` this [link](https://cssreset.tk/css-reset-v2/resetV2.css)
+> Add into your `head` this [link](https://matteo0099.github.io/CssReset-V2.0/css-reset-v2/resetV2.mini.css)
 
 
 1. **download the cssreset.css (style>cssreset.css) and just add it into your file!**
-2. Or you can add a **CDN** into your project!: [CDN link](https://cssreset.tk/css-reset-v2/resetV2.css) <br>
+2. Or you can add a **CDN** into your project!: [CDN link](https://matteo0099.github.io/CssReset-V2.0/css-reset-v2/resetV2.mini.css) <br>
 
 
 **WARNING !**
